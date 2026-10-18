@@ -1,0 +1,2 @@
+benchmark,dataset,raw_path,aggregation,baseline_type,n,logical_bytes,ms_per_iter,rows_per_sec,logical_GBps,estimated_physical_GBps,cpu_sum,gpu_sum,abs_error,rel_error,validated,device,job_id,kernel_path,block,grid,warmup,iters,sm,cc_major,cc_minor
+raw_fp64_sum,uniform,<DATA_ROOT>/uniform.f64le.bin,sum,raw_fp64_sum,100000000,800000000,0.185577,538859086485.49695,4310.872692,4310.872692,50004564432.701996,50004564432.702065,6.866455078125e-05,1.373165661180017e-15,true,NVIDIA H200,,raw_fp64_sum_vec2,256,1056,10,200,132,9,0

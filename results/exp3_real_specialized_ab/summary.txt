@@ -1,0 +1,11 @@
+run_dir,<RUN_DIR>
+runtime_ms,0.832399
+specialized_ms,0.290418
+runtime_logical_GBps,1201.347
+specialized_logical_GBps,3443.310
+speedup_ms_ratio,2.866
+speedup_GBps_ratio,2.866
+runtime_gpu_sum,50002855376.701942
+specialized_gpu_sum,50002855376.701942
+runtime_abs_exact_gpu_diff,1709056.0000534058
+specialized_abs_exact_gpu_diff,1709056.0000534058
