@@ -105,7 +105,7 @@ Not claimed: a speedup over any named library, any end-to-end or filter/aggregat
 
 ## Reproduction
 
-Honest status: the builds and runs behind these numbers were done on an H200 node under Slurm. This repository snapshot was assembled afterwards on a machine without `nvcc` and has not been rebuilt or re-run in its current form.
+Honest status: the builds and runs behind these numbers were done on an H200 node under Slurm. This repository snapshot has not been re-run on an H200 in its current form. It was rebuilt from a fresh clone with the commands below (CUDA 12.2, CMake 3.30, both `-DCMAKE_CUDA_ARCHITECTURES=90` and `86`), and a smoke run with `--validate` on an RTX A4500 (sm_86) passed for Exp0 seq, Exp1 rowpack16 k = 1..8, Exp3 synthetic SUM and the raw FP64 SUM comparator on a 1M-value synthetic file. That run checks correctness only; its timings are not comparable to the H200 numbers.
 
 Requirements taken from the build files and run scripts: CMake >= 3.24, C++17 and CUDA 17 standard, CUDA 12.6 toolkit used for the reported runs, `-DCMAKE_CUDA_ARCHITECTURES=90` (sm_90 GPU; other GPUs will not match the numbers).
 
@@ -142,3 +142,7 @@ Limits on reproducing the Exp3 numbers:
 - The unexplained Exp3 behaviour (k = 6 dip, k = 8 slower than raw, and the k = 1 floor of 0.048 ms versus 0.027 ms for the Exp1 kernel on the same bytes) is not profiled here. Per-plane block reductions and register pressure are candidates, not findings.
 - `--use_fast_math` is enabled for all CUDA targets. The integer paths are unaffected and the FP64 sums were checked against CPU references, but it is a flag worth questioning.
 - Exp3 encoded-mode results depend on an artifact generator that is not part of this repository.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
