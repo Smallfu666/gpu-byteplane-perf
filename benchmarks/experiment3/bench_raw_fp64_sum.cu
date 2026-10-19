@@ -447,7 +447,7 @@ int main(int argc, char **argv)
   std::uint64_t n = r.n;
   std::uint64_t logical_bytes = n * 8ull;
   std::fprintf(f,
-               "raw_fp64_sum,%s,%s,sum,raw_fp64_sum,%" PRIu64 ",%" PRIu64 ",%.6f,%.17g,%.6f,%.6f,%.17g,%.17g,%.17g,%.17g,%s,%s,%s,%d,%d,%d,%d,%d,%d,%d\n",
+               "raw_fp64_sum,%s,%s,sum,raw_fp64_sum,%" PRIu64 ",%" PRIu64 ",%.6f,%.17g,%.6f,%.6f,%.17g,%.17g,%.17g,%.17g,%s,%s,%s,%s,%d,%d,%d,%d,%d,%d,%d\n",
                dataset.c_str(),
                raw_path.c_str(),
                n,
