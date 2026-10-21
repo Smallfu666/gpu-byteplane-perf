@@ -14,7 +14,7 @@ This is not a database engine and makes no comparison against any named library.
 
 ## Scope
 
-Included: Exp0, Exp1, Exp3 sources, build files, run scripts and small result summaries (CSV and text).
+Included: Exp0, Exp1, Exp3 sources, build files, run scripts and small result summaries (CSV and text). A separate reliability study (fault injection into byte planes) is in [`reliability/`](reliability/README.md).
 
 Not included: filter and filter+aggregate experiments. They are excluded pending a re-measurement against a fair (bandwidth-saturating) raw baseline, so no numbers from them appear here. Profiler binaries (`.ncu-rep`) are also not included; only the extracted CSV summaries are.
 
@@ -92,6 +92,10 @@ File: `benchmarks/experiment0/bench_hbm_bw.cu` (`seq_read_dummy_reduce`, `masked
 - Random gather of 16-byte elements over an 8 GiB span: 0.59 TB/s logical, about 13% of sequential.
 
 These give the reference used above: a scan of this kind can at best approach roughly 4.4 TB/s of delivered read throughput on this GPU, and Exp1 rowpack16 at k = 8 reaches it.
+
+## Reliability: fail-soft byte planes under injected faults
+
+[`reliability/`](reliability/README.md) holds the other half of the project: replicating the high-significance planes, detecting corruption with per-plane digests, and returning an interval that contains the true answer when corruption cannot be repaired. It covers 234 injected-fault configurations (24 on a CPU evaluator, 210 on an H200 checked against a CPU oracle) with zero silent-wrong outcomes, and explains why that count is weaker evidence than it sounds and why the work was stopped. No runtime overhead numbers are listed there, for the same baseline reason as the filter experiments.
 
 ## Summary of claims
 
