@@ -1,0 +1,4 @@
+dataset,n_rows,mode,rate,seed,detected,detected_planes,contains_truth,outcome,bound_width,clean_answer,delivered_answer,fault_planes,fault_offsets
+cesm_atm_cloud,168480000,same_fault_all,1e-05,0,True,"[0, 1, 2, 3, 4, 5, 6, 7]",True,bounded,3.107907441538585e+27,4.5696392626900643e+26,4.569639307899852e+26,"[0, 1, 2, 3, 4, 5, 6, 7]",1
+cesm_atm_cloud,168480000,same_fault_all,1e-05,1,True,"[0, 1, 2, 3, 4, 5, 6, 7]",True,bounded,3.107907441538585e+27,4.5696392626900643e+26,4.5696393683067166e+26,"[0, 1, 2, 3, 4, 5, 6, 7]",1
+cesm_atm_cloud,168480000,same_fault_all,1e-05,2,True,"[0, 1, 2, 3, 4, 5, 6, 7]",True,bounded,3.107907441538585e+27,4.5696392626900643e+26,4.5696392800517055e+26,"[0, 1, 2, 3, 4, 5, 6, 7]",1

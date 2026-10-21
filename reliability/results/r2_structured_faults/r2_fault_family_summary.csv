@@ -1,0 +1,15 @@
+dataset,fault_family,n_cells,classification_match_rate,contains_truth_rate,recovered_rate,certified_bounded_rate,uncertified_or_unrecoverable_rate,same_fault_false_recovery_count,cert_bound_failure_count,hard_fail_count
+cesm_atm_cloud,column_like_repeated_offset,15,1.0,1.0,0.4,0.6,0.0,0,0,0
+cesm_atm_cloud,mixed_independent_plus_correlated,15,1.0,1.0,0.0,1.0,0.0,0,0,0
+cesm_atm_cloud,plane_localized_lsb,15,1.0,1.0,0.0,1.0,0.0,0,0,0
+cesm_atm_cloud,plane_localized_msb,15,1.0,1.0,0.6,0.4,0.0,0,0,0
+cesm_atm_cloud,regional_multi_byte,15,1.0,1.0,0.4,0.6,0.0,0,0,0
+cesm_atm_cloud,same_fault_all_correlated_control,15,1.0,1.0,0.0,1.0,0.0,0,0,0
+cesm_atm_cloud,single_domain_burst,15,1.0,1.0,0.4,0.6,0.0,0,0,0
+hurricane_u,column_like_repeated_offset,15,1.0,1.0,0.4,0.6,0.0,0,0,0
+hurricane_u,mixed_independent_plus_correlated,15,1.0,1.0,0.0,1.0,0.0,0,0,0
+hurricane_u,plane_localized_lsb,15,1.0,1.0,0.0,1.0,0.0,0,0,0
+hurricane_u,plane_localized_msb,15,1.0,1.0,0.7333333333333333,0.26666666666666666,0.0,0,0,0
+hurricane_u,regional_multi_byte,15,1.0,1.0,0.4,0.6,0.0,0,0,0
+hurricane_u,same_fault_all_correlated_control,15,1.0,1.0,0.0,1.0,0.0,0,0,0
+hurricane_u,single_domain_burst,15,1.0,1.0,0.4666666666666667,0.5333333333333333,0.0,0,0,0

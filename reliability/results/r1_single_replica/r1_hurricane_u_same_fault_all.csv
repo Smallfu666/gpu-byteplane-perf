@@ -1,0 +1,4 @@
+dataset,n_rows,mode,rate,seed,detected,detected_planes,contains_truth,outcome,bound_width,clean_answer,delivered_answer,fault_planes,fault_offsets
+hurricane_u,25000000,same_fault_all,1e-05,0,True,"[0, 1, 2, 3, 4, 5, 6, 7]",True,bounded,4.611686018427388e+26,1.7061283305787757e+26,1.706128375443773e+26,"[0, 1, 2, 3, 4, 5, 6, 7]",1
+hurricane_u,25000000,same_fault_all,1e-05,1,True,"[0, 1, 2, 3, 4, 5, 6, 7]",True,bounded,4.611686018427388e+26,1.7061283305787757e+26,1.7061284095200444e+26,"[0, 1, 2, 3, 4, 5, 6, 7]",1
+hurricane_u,25000000,same_fault_all,1e-05,2,True,"[0, 1, 2, 3, 4, 5, 6, 7]",True,bounded,4.611686018427388e+26,1.7061283305787757e+26,1.7061283133072082e+26,"[0, 1, 2, 3, 4, 5, 6, 7]",1

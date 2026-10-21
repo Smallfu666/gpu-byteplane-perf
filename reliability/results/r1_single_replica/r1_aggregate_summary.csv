@@ -1,0 +1,9 @@
+dataset,mode,rate,total_cells,detected_rate,contains_truth,expected_bound_width,recovered_count,bounded_count,unavailable_count,silent_wrong_count
+cesm_atm_cloud,plane_uniform,0.0001,3,1.0,1.0,3.107907441538585e+27,0,3,0,0
+cesm_atm_cloud,plane_uniform,1e-05,3,1.0,1.0,3.107907441538585e+27,0,3,0,0
+cesm_atm_cloud,plane_uniform,1e-06,3,1.0,1.0,3.107907441538585e+27,0,3,0,0
+cesm_atm_cloud,same_fault_all,1e-05,3,1.0,1.0,3.107907441538585e+27,0,3,0,0
+hurricane_u,plane_uniform,0.0001,3,1.0,1.0,4.611686018427388e+26,0,3,0,0
+hurricane_u,plane_uniform,1e-05,3,1.0,1.0,4.611686018427388e+26,0,3,0,0
+hurricane_u,plane_uniform,1e-06,3,1.0,1.0,4.611686018427388e+26,0,3,0,0
+hurricane_u,same_fault_all,1e-05,3,1.0,1.0,4.611686018427388e+26,0,3,0,0
